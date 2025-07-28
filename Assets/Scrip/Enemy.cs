@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using UnityEditor.Experimental.GraphView;
+using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
@@ -6,10 +7,15 @@ public class Enemy : MonoBehaviour
     public int currentIndex = 0;
     public int healt = 3;
 
+    private Animator animator;
+    private Rigidbody2D rb;
+    private Vector2 direction;
 
     void Start()
     {
         transform.position = Path.waypoints[0];
+        animator = GetComponent<Animator>();
+        rb = GetComponent<Rigidbody2D>();
     }
 
     void Update()
@@ -18,6 +24,7 @@ public class Enemy : MonoBehaviour
 
         Vector3 target = Path.waypoints[currentIndex];
         Vector3 dir = target - transform.position;
+        direction = dir.normalized;
 
         transform.Translate(dir.normalized * speed * Time.deltaTime, Space.World);
 
@@ -35,6 +42,13 @@ public class Enemy : MonoBehaviour
 
         
     }
+
+    public void FixedUpdate()
+    {
+        animator.SetFloat("X", direction.x);
+        animator.SetFloat("Y", direction.y);
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Bullet"))
