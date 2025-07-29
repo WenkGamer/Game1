@@ -5,6 +5,7 @@ public class Bullet : MonoBehaviour
     public float speed = 10f;
     private Transform target;
     private Rigidbody2D rb;
+    public int damebullet = 0;
 
     private void Start()
     {
@@ -28,8 +29,18 @@ public class Bullet : MonoBehaviour
 
         if (Vector2.Distance(transform.position, target.position) < 0.2f)
         {
-            // TODO: Gây sát thương tại đây
-            Destroy(gameObject);
+            Enemy enemy = target.GetComponent<Enemy>();
+            if (enemy != null)
+            {
+                enemy.TakeDamage(damebullet);  // Gây dame
+            }
+            Enemy2 enemy2 = target.GetComponent<Enemy2>();
+            if (enemy != null)
+            {
+                enemy2.TakeDamage(damebullet);  // Gây dame
+            }
+
+            Destroy(gameObject); // Xoá đạn
         }
     }
 }

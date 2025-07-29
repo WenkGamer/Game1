@@ -1,4 +1,4 @@
-﻿using UnityEditor.Experimental.GraphView;
+﻿
 using UnityEngine;
 
 public class Enemy : MonoBehaviour
@@ -49,13 +49,23 @@ public class Enemy : MonoBehaviour
         animator.SetFloat("Y", direction.y);
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    /*private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Bullet"))
         {
             healt--;
             
         }
+        if (healt <= 0)
+        {
+            Destroy(gameObject);
+        }
+    }*/
+    public void TakeDamage(int damage)
+    {
+        healt -= damage;
+        Debug.Log("Enemy took " + damage + " damage. Remaining HP: " + healt);
+
         if (healt <= 0)
         {
             Destroy(gameObject);

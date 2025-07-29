@@ -605,6 +605,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   towerPrefab1: {fileID: 7370796754806686111, guid: f84b61b60d677ef4aa6d77727fee2605, type: 3}
-  towerPrefab2: {fileID: 7370796754806686111, guid: f84b61b60d677ef4aa6d77727fee2605, type: 3}
+  towerPrefab2: {fileID: 7384971028418570238, guid: 07fd9be67bb910c46bf4415968f35d43, type: 3}
   bttower1: {fileID: 5156477558539150901}
   bttower2: {fileID: 695219224634944947}

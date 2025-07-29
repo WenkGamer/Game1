@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class Enemy2 : MonoBehaviour
+public class Enemy2 : MonoBehaviour 
 {
     public float speed = 2f;
     public int currentIndex = 0;
@@ -51,16 +51,15 @@ public class Enemy2 : MonoBehaviour
         animator.SetFloat("Y", direction.y);
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    public void TakeDamage(int damage)
     {
-        if (collision.gameObject.CompareTag("Bullet"))
-        {
-            healt--;
+        healt -= damage;
+        Debug.Log("Enemy took " + damage + " damage. Remaining HP: " + healt);
 
-        }
         if (healt <= 0)
         {
             Destroy(gameObject);
         }
     }
+
 }
