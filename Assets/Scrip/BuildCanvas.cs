@@ -16,10 +16,7 @@ public class BuildCanvas : MonoBehaviour
     {
         spot = spotBuild;
 
-        bttower1.onClick.AddListener(() => {
-            Debug.Log("Click tower 1");
-            Build(towerPrefab1);
-            });
+        bttower1.onClick.AddListener(() => Build(towerPrefab1));
         bttower2.onClick.AddListener(() => Build(towerPrefab2));
     }
 

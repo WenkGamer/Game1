@@ -4,7 +4,7 @@ public class Enemy2 : MonoBehaviour
 {
     public float speed = 2f;
     public int currentIndex = 0;
-    private int healt = 3;
+    [SerializeField] private int healt;
 
     private Rigidbody2D rd;
     private Animator animator;
@@ -54,7 +54,6 @@ public class Enemy2 : MonoBehaviour
     public void TakeDamage(int damage)
     {
         healt -= damage;
-        Debug.Log("Enemy took " + damage + " damage. Remaining HP: " + healt);
 
         if (healt <= 0)
         {

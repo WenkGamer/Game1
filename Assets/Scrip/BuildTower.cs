@@ -10,19 +10,11 @@ public class BuildTower : MonoBehaviour
     {
         if(currentUI == null)
         {
-            //currentUI = Instantiate(towerSelectionUI, transform.position, Quaternion.identity, spawn);
             currentUI = Instantiate(towerSelectionUI, spawn);
             currentUI.transform.localPosition = Vector3.zero;
             BuildCanvas ui = currentUI.GetComponent<BuildCanvas>();
             if (ui != null)
-            {
-                Debug.Log("Đã gọi UI");
                 ui.Setup(this);
-            }
-            else 
-            {
-                Debug.LogError("Khing tim thay ui");
-            }
         }
     }
 
