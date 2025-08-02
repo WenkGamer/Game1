@@ -1,0 +1,624 @@
+fileFormatVersion: 2
+guid: 62858bab706e5544b817131684d5e130
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1674756617649120392
+    second: Game menu UI withOUT shadow_0
+  - first:
+      213: 5778422660500380829
+    second: Game menu UI withOUT shadow_1
+  - first:
+      213: 3750518850427560097
+    second: Game menu UI withOUT shadow_2
+  - first:
+      213: -3446002354318914642
+    second: Game menu UI withOUT shadow_3
+  - first:
+      213: -4904198034619418876
+    second: Game menu UI withOUT shadow_4
+  - first:
+      213: -7648849560164962349
+    second: Game menu UI withOUT shadow_5
+  - first:
+      213: -987465628040024486
+    second: Game menu UI withOUT shadow_6
+  - first:
+      213: -7208878954977286077
+    second: Game menu UI withOUT shadow_7
+  - first:
+      213: 8098197687601089714
+    second: Game menu UI withOUT shadow_8
+  - first:
+      213: 5543344697005048518
+    second: Game menu UI withOUT shadow_9
+  - first:
+      213: 4521605370962336590
+    second: Game menu UI withOUT shadow_10
+  - first:
+      213: -5680350422911752395
+    second: Game menu UI withOUT shadow_11
+  - first:
+      213: -5335375415078977742
+    second: Game menu UI withOUT shadow_12
+  - first:
+      213: 6722231142339066213
+    second: Game menu UI withOUT shadow_13
+  - first:
+      213: 7679149533359436854
+    second: Game menu UI withOUT shadow_14
+  - first:
+      213: 693041783702440498
+    second: Game menu UI withOUT shadow_15
+  - first:
+      213: -7134265781530043589
+    second: Game menu UI withOUT shadow_16
+  - first:
+      213: -998648907378294921
+    second: Game menu UI withOUT shadow_17
+  - first:
+      213: 7451711769071667630
+    second: Game menu UI withOUT shadow_18
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Game menu UI withOUT shadow_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 209
+        width: 115
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 884e530454eed3710800000000000000
+      internalID: 1674756617649120392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game menu UI withOUT shadow_1
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 221
+        width: 136
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9c51395bc4113050800000000000000
+      internalID: 5778422660500380829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game menu UI withOUT shadow_2
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 215
+        width: 129
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a0242bf5058c0430800000000000000
+      internalID: 3750518850427560097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game menu UI withOUT shadow_3
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 209
+        width: 121
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eab49afcd175d20d0800000000000000
+      internalID: -3446002354318914642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game menu UI withOUT shadow_4
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 209
+        width: 111
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 407375efed9c0fbb0800000000000000
+      internalID: -4904198034619418876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game menu UI withOUT shadow_5
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 209
+        width: 107
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3dfe6f1b9d3d9d590800000000000000
+      internalID: -7648849560164962349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game menu UI withOUT shadow_6
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 209
+        width: 107
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5e24cc3e31db42f0800000000000000
+      internalID: -987465628040024486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game menu UI withOUT shadow_7
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 246
+        width: 98
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3482ac3e8cae4fb90800000000000000
+      internalID: -7208878954977286077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game menu UI withOUT shadow_8
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 141
+        width: 250
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bc4a5a04e3926070800000000000000
+      internalID: 8098197687601089714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game menu UI withOUT shadow_9
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 137
+        width: 250
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c2088cc1aaedec40800000000000000
+      internalID: 5543344697005048518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game menu UI withOUT shadow_10
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 97
+        width: 105
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4b55bed028ffbe30800000000000000
+      internalID: 4521605370962336590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game menu UI withOUT shadow_11
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 93
+        width: 107
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 537ea9ad2675b21b0800000000000000
+      internalID: -5680350422911752395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game menu UI withOUT shadow_12
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 93
+        width: 109
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23f7dd8f350f4f5b0800000000000000
+      internalID: -5335375415078977742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game menu UI withOUT shadow_13
+      rect:
+        serializedVersion: 2
+        x: 861
+        y: 89
+        width: 117
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5693039ab992a4d50800000000000000
+      internalID: 6722231142339066213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game menu UI withOUT shadow_14
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 89
+        width: 116
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 634fef090d1d19a60800000000000000
+      internalID: 7679149533359436854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game menu UI withOUT shadow_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 109
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23a461494dd2e9900800000000000000
+      internalID: 693041783702440498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game menu UI withOUT shadow_16
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 2
+        width: 107
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3b5da6121ffdfc90800000000000000
+      internalID: -7134265781530043589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game menu UI withOUT shadow_17
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 4
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77f726c1c161422f0800000000000000
+      internalID: -998648907378294921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game menu UI withOUT shadow_18
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 2
+        width: 105
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea94d148f5cc96760800000000000000
+      internalID: 7451711769071667630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Game menu UI withOUT shadow_0: 1674756617649120392
+      Game menu UI withOUT shadow_1: 5778422660500380829
+      Game menu UI withOUT shadow_10: 4521605370962336590
+      Game menu UI withOUT shadow_11: -5680350422911752395
+      Game menu UI withOUT shadow_12: -5335375415078977742
+      Game menu UI withOUT shadow_13: 6722231142339066213
+      Game menu UI withOUT shadow_14: 7679149533359436854
+      Game menu UI withOUT shadow_15: 693041783702440498
+      Game menu UI withOUT shadow_16: -7134265781530043589
+      Game menu UI withOUT shadow_17: -998648907378294921
+      Game menu UI withOUT shadow_18: 7451711769071667630
+      Game menu UI withOUT shadow_2: 3750518850427560097
+      Game menu UI withOUT shadow_3: -3446002354318914642
+      Game menu UI withOUT shadow_4: -4904198034619418876
+      Game menu UI withOUT shadow_5: -7648849560164962349
+      Game menu UI withOUT shadow_6: -987465628040024486
+      Game menu UI withOUT shadow_7: -7208878954977286077
+      Game menu UI withOUT shadow_8: 8098197687601089714
+      Game menu UI withOUT shadow_9: 5543344697005048518
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
