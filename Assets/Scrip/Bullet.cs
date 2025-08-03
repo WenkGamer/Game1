@@ -5,7 +5,7 @@ public class Bullet : MonoBehaviour
     public float speed = 10f;
     private Transform target;
     private Rigidbody2D rb;
-    public int damebullet = 0;
+    public int damebullet = 2;
 
     private void Start()
     {

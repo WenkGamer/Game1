@@ -20,9 +20,9 @@ public class EnemyHealth : MonoBehaviour
         healthBarForeground= healtBarGO.transform.Find("healthBarBackground/healthBarForeground").GetComponent<Image>();
     }
 
-    public void TakeDamage(int damage)
+    public void TakeDamage(int damage) // can sua
     {
-        currentHealth -= damage;
+        currentHealth -=damage ;
         UpdateHealthBar();
 
 
