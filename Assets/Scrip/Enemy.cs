@@ -10,6 +10,7 @@ public class Enemy : MonoBehaviour
     private Animator animator;
     private Rigidbody2D rb;
     private Vector2 direction;
+    public Transform target;
 
     void Start()
     {
@@ -49,18 +50,27 @@ public class Enemy : MonoBehaviour
         animator.SetFloat("Y", direction.y);
     }
 
-      /*private void OnTriggerEnter2D(Collider2D collision)
+      private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Bullet"))
         {
             healt--;
-            
+
         }
+
+
+
+        //
+
+
+
+
+
         if (healt <= 0)
         {
             Destroy(gameObject);
         }
-    }*/
+    }
     public void TakeDamage(int damage)
     {
         healt -= damage;
