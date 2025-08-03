@@ -43,4 +43,15 @@ public class Bullet : MonoBehaviour
             Destroy(gameObject); // Xoá đạn
         }
     }
+    void HitTarget()
+    {
+        EnemyHealth enemyHealth = target.GetComponent<EnemyHealth>();
+        if (enemyHealth != null)
+        {
+            enemyHealth.TakeDamage(damebullet);
+        }
+        Destroy(gameObject);
+    }
+
+        
 }
