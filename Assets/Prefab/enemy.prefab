@@ -108,7 +108,9 @@ MonoBehaviour:
   speed: 1.5
   currentIndex: 0
   healt: 10
+  goldValue: 10
   target: {fileID: 0}
+  goldPrefab: {fileID: 2033722365059340368, guid: a221980d38eab1a41a3808bfbcdb43ff, type: 3}
 --- !u!58 &4976318276355246859
 CircleCollider2D:
   m_ObjectHideFlags: 0

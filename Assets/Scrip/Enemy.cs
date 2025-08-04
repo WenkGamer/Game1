@@ -7,10 +7,14 @@ public class Enemy : MonoBehaviour
     public int currentIndex = 0;
     public int healt = 3;
 
+  //  public int goldValue = 10;
+
     private Animator animator;
     private Rigidbody2D rb;
     private Vector2 direction;
     public Transform target;
+
+    public GameObject goldPrefab;
 
     void Start()
     {
@@ -50,35 +54,55 @@ public class Enemy : MonoBehaviour
         animator.SetFloat("Y", direction.y);
     }
 
-      private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.CompareTag("Bullet"))
-        {
-            healt--;
+    //  private void OnTriggerEnter2D(Collider2D collision)
+    //{
+    //    if (collision.gameObject.CompareTag("Bullet"))
+    //    {
+    //        healt--;
 
-        }
-
-
-
-        
+    //    }
 
 
 
-
-
-        if (healt <= 0)
-        {
-            Destroy(gameObject);
-        }
-    }
     public void TakeDamage(int damage)
     {
         healt -= damage;
-        Debug.Log("Enemy took " + damage + " damage. Remaining HP: " + healt);
 
         if (healt <= 0)
         {
-            Destroy(gameObject);
+            Die();
         }
+
+
+
+
+
+        //if (healt <= 0)
+        //{
+        // //   Destroy(gameObject);
+        //    Die();
+        //}
     }
+    
+     public void Die()
+    {
+        // Tạo ra vật phẩm vàng tại vị trí của quái vật
+        if (goldPrefab != null)
+        {
+            Instantiate(goldPrefab, transform.position, Quaternion.identity);
+        }
+
+        // Hủy đối tượng quái vật sau khi đã tạo vàng
+        Destroy(gameObject);
+    }
+    //void TakeDamage(int damage)
+    //{
+    //    healt -= damage;
+    //    Debug.Log("Enemy took " + damage + " damage. Remaining HP: " + healt);
+
+    //    if (healt <= 0)
+    //    {
+    //        Destroy(gameObject);
+    //    }
+    //}
 }
