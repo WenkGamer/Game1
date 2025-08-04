@@ -8,6 +8,7 @@ public class Menu : MonoBehaviour
     public AudioMixer audioMixer;
     public Slider volumeSlider;
     public GameObject Slide;
+    public GameObject MenuScreen;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -55,4 +56,36 @@ public class Menu : MonoBehaviour
         audioMixer.SetFloat("MusicVolume", dB);
         PlayerPrefs.SetFloat("MusicVol_dB", dB);
     }
+
+    public void ScreenMenu()
+    {
+        MenuScreen.SetActive(true);
+    }
+
+    #region Screen
+    public void Screen1()
+    {
+
+    }
+    public void Screen2()
+    {
+
+    }
+    public void Screen3()
+    {
+
+    }
+    public void Screen4()
+    {
+
+    }
+    public void Screen5()
+    {
+
+    }
+    public void ExitMenuScreen()
+    {
+        MenuScreen.SetActive(false);
+    }
+    #endregion
 }
