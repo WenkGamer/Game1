@@ -14,6 +14,9 @@ public class Enemy : MonoBehaviour
     private List<Transform> waypoints = new List<Transform>();
     private int currentIndex = 0;
 
+    public int goldValue = 10;
+    public GameObject goldPrefab;
+
     void Start()
     {
         animator = GetComponent<Animator>();
@@ -68,7 +71,16 @@ public class Enemy : MonoBehaviour
 
         if (healt <= 0)
         {
-            Destroy(gameObject);
+            Die();
         }
+    }
+
+    public void Die()
+    {
+        if (goldPrefab != null)
+        {
+            Instantiate(goldPrefab, transform.position, Quaternion.identity);
+        }
+        Destroy(gameObject);
     }
 }

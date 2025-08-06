@@ -101,4 +101,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   goldValue: 10
-  lifetime: 0.1
+  lifetime: 0.4
