@@ -20,7 +20,12 @@ public class BuildTower : MonoBehaviour
 
     public void BuildTowercl(GameObject towerPrefab)
     {
-        Instantiate(towerPrefab, transform.position, Quaternion.identity);
+        GameObject tower = Instantiate(towerPrefab, transform.position, Quaternion.identity);
+        UpgradeTower upgradescript = tower.GetComponent<UpgradeTower>();
+        if (upgradescript != null)
+        {
+            upgradescript.Init(spawn);
+        }
         Destroy(currentUI);
         Destroy(gameObject);
     }

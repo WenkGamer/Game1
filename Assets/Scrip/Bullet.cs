@@ -34,11 +34,11 @@ public class Bullet : MonoBehaviour
             {
                 enemy.TakeDamage(damebullet);  // Gây dame
             }
-            Enemy2 enemy2 = target.GetComponent<Enemy2>();
-            if (enemy != null)
-            {
-                enemy2.TakeDamage(damebullet);  // Gây dame
-            }
+            //Enemy2 enemy2 = target.GetComponent<Enemy2>();
+            //if (enemy != null)
+            //{
+            //    enemy2.TakeDamage(damebullet);  // Gây dame
+            //}
 
             Destroy(gameObject); // Xoá đạn
         }

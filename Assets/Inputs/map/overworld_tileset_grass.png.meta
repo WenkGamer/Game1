@@ -4737,7 +4737,7 @@ TextureImporter:
         width: 48
         height: 61
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4746,6 +4746,28 @@ TextureImporter:
       bones: []
       spriteID: afd4895b236487b4a838d8ec7be635a8
       internalID: 1784025141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: overworld_tileset_grass_211
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 80
+        width: 64
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcc5fbd09f7a116469b3d1f5fe9f523c
+      internalID: -1490787269
       vertices: []
       indices: 
       edges: []
@@ -4890,6 +4912,7 @@ TextureImporter:
       overworld_tileset_grass_209: 1647322704
       overworld_tileset_grass_21: -1656062140
       overworld_tileset_grass_210: 1784025141
+      overworld_tileset_grass_211: -1490787269
       overworld_tileset_grass_22: 1154992307
       overworld_tileset_grass_23: -454133380
       overworld_tileset_grass_24: 1100852480
