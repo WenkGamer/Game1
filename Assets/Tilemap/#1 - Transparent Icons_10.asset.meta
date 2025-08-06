@@ -1,8 +1,15 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Tilemap/#1 - Transparent Icons_10.asset.meta
 guid: f2d08f1227726ee4bb6a6a6bc135d226
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 11400000
+========
+guid: 6522f30e342599e4e9dd4cc2cc03c830
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+>>>>>>>> DucManh:Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Anton SDF - Sunny Days.mat.meta
   userData: 
   assetBundleName: 
   assetBundleVariant: 
