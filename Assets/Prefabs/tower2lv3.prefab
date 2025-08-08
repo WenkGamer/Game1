@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &7384971028418570238
+--- !u!1 &8687869869455035703
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,40 +8,38 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6466051790897280329}
-  - component: {fileID: 6686326070572587282}
-  - component: {fileID: 8191739109685051775}
-  - component: {fileID: -8855642002766979119}
-  - component: {fileID: 4715792366763660954}
+  - component: {fileID: 1378735886248864261}
+  - component: {fileID: 2741450469956923694}
+  - component: {fileID: -6393808363640153707}
   m_Layer: 0
-  m_Name: tower2
+  m_Name: tower2lv3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6466051790897280329
+--- !u!4 &1378735886248864261
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7384971028418570238}
+  m_GameObject: {fileID: 8687869869455035703}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.25, y: -2.16, z: 0}
+  m_LocalPosition: {x: 21.51649, y: -16.158848, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &6686326070572587282
+--- !u!212 &2741450469956923694
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7384971028418570238}
+  m_GameObject: {fileID: 8687869869455035703}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -79,7 +77,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: -3463070028636962532, guid: e1da1e3685220224b986be812b54b730, type: 3}
+  m_Sprite: {fileID: 7028616704906629411, guid: 91246e7ab55bc7c45a5692552232edd7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -90,44 +88,13 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &8191739109685051775
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7384971028418570238}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a1bf7d53d878ec448e2ece27e8aec66, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 910698953808645410, guid: 4885d6a9ad2a0f44aa0afd036275c806, type: 3}
-  firePoint: {fileID: 6466051790897280329}
-  fireRate: 1
-  fireRange: 5
---- !u!114 &-8855642002766979119
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7384971028418570238}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 32209c03e34d049458041cc1e68168a0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  upgradeUI: {fileID: 1940672633831394772, guid: 4f5f9b79925be9247adafdab3fbf2228, type: 3}
-  towerlvup: {fileID: 5557207223888574282, guid: 681856f18e012a54392b9e91424c6b82, type: 3}
-  basesell: {fileID: 5864163194221635972, guid: bb0b1955d6a3ed84ca843e49571aab55, type: 3}
---- !u!61 &4715792366763660954
+--- !u!61 &-6393808363640153707
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7384971028418570238}
+  m_GameObject: {fileID: 8687869869455035703}
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
@@ -151,19 +118,19 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.03556633, y: -0.27267313}
+  m_Offset: {x: -0.045822144, y: -0.32992268}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2, y: 3.03125}
+    oldSize: {x: 2, y: 3.5625}
     newSize: {x: 2, y: 3.5625}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.4546547, y: 2.0591097}
+  m_Size: {x: 1.5417747, y: 2.462759}
   m_EdgeRadius: 0

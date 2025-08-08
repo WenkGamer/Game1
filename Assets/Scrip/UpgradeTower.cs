@@ -3,7 +3,7 @@
 public class UpgradeTower : MonoBehaviour
 {
     public GameObject upgradeUI;
-    public GameObject towerlv2;
+    public GameObject towerlvup;
     private GameObject currentUI;
     private Transform baseTower;
     public GameObject basesell;
@@ -17,25 +17,18 @@ public class UpgradeTower : MonoBehaviour
     {
         if(currentUI == null)
         {
-            if (upgradeUI == null || baseTower == null)
-            {
-                Debug.LogWarning("UpgradeUI hoặc baseTower bị null");
-                return;
-            }
             currentUI = Instantiate(upgradeUI, baseTower);
             UpgradeUI ui = currentUI.GetComponent<UpgradeUI>();
             if (ui != null)
                 ui.Setup(this);
-            else
-                Debug.LogWarning("Không tìm thấy UpgradeUI script trong prefab");
         }
     }
 
     public void Upgrade()
     {
-        if(towerlv2 != null)
+        if(towerlvup != null)
         {
-            GameObject newTower = Instantiate(towerlv2, transform.position, Quaternion.identity);
+            GameObject newTower = Instantiate(towerlvup, transform.position, Quaternion.identity);
             UpgradeTower uiscript = newTower.GetComponent<UpgradeTower>();
             if (uiscript != null)
                 uiscript.Init(baseTower);
