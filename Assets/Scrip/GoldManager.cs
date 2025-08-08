@@ -7,7 +7,7 @@ public class GoldManager : MonoBehaviour
     private int currenGold = 0;
 
 
-    void Awek()
+    void Awake()
     {
             if (instance == null)
         {
