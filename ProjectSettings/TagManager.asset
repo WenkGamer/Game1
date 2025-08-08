@@ -3,19 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-<<<<<<< HEAD
   tags: []
-=======
-  tags:
-  - Bullet
-  - Enemy
-  - VolumeSlider
->>>>>>> DucManh
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Walkable
+  - 
   - Water
   - UI
   - 
