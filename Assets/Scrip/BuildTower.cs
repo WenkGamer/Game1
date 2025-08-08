@@ -6,6 +6,9 @@ public class BuildTower : MonoBehaviour
     public GameObject towerSelectionUI;
     private GameObject currentUI;
 
+    private int costTower1 = 100;
+    private int costTower2 = 150;
+
     private void OnMouseDown()
     {
         if(currentUI == null)
@@ -14,7 +17,7 @@ public class BuildTower : MonoBehaviour
             currentUI.transform.localPosition = Vector3.zero;
             BuildCanvas ui = currentUI.GetComponent<BuildCanvas>();
             if (ui != null)
-                ui.Setup(this);
+                ui.Setup(this, costTower1, costTower2);
         }
     }
 

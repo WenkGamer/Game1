@@ -3,10 +3,13 @@
 public class UpgradeTower : MonoBehaviour
 {
     public GameObject upgradeUI;
-    public GameObject towerlvup;
     private GameObject currentUI;
     private Transform baseTower;
     public GameObject basesell;
+
+    public GameObject[] towerLevels;
+    [SerializeField] private int[] costUpgrade;
+    [SerializeField] private int currentLevel = 0; 
 
     public void Init(Transform canvas)
     {
@@ -24,17 +27,20 @@ public class UpgradeTower : MonoBehaviour
         }
     }
 
-    public void Upgrade()
+    public void Upgrade(int cost)
     {
-        if(towerlvup != null)
+        if(currentLevel < towerLevels.Length && GameManager.instance.SpendGold(cost))
         {
-            GameObject newTower = Instantiate(towerlvup, transform.position, Quaternion.identity);
-            UpgradeTower uiscript = newTower.GetComponent<UpgradeTower>();
-            if (uiscript != null)
+                GameObject newTower = Instantiate(towerLevels[currentLevel], transform.position, Quaternion.identity);
+                UpgradeTower uiscript = newTower.GetComponent<UpgradeTower>();
+                if (uiscript != null)
+            {
                 uiscript.Init(baseTower);
+                currentLevel++;
+            }
 
-            Destroy(currentUI);
-            Destroy(gameObject);
+                Destroy(currentUI);
+                Destroy(gameObject);
         }
     }
 

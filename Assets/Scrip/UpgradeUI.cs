@@ -7,7 +7,9 @@ public class UpgradeUI : MonoBehaviour
     public Button btSell;
     private UpgradeTower tower;
 
-     public void Setup(UpgradeTower tower)
+    [SerializeField] private int upgradecost;
+
+    public void Setup(UpgradeTower tower)
     {
         this.tower = tower;
 
@@ -18,7 +20,7 @@ public class UpgradeUI : MonoBehaviour
         else
         {
             btUpgrade.onClick.RemoveAllListeners();
-            btUpgrade.onClick.AddListener(() => tower.Upgrade());
+            btUpgrade.onClick.AddListener(() => tower.Upgrade(upgradecost));
         }
         btSell.onClick.RemoveAllListeners();
         btSell.onClick.AddListener(() => tower.Sell());
