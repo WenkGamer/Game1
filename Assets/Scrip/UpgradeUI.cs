@@ -10,7 +10,17 @@ public class UpgradeUI : MonoBehaviour
      public void Setup(UpgradeTower tower)
     {
         this.tower = tower;
-        btUpgrade.onClick.AddListener(() => tower.Upgrade());
+
+        if(tower.towerlvup == null)
+        {
+            btUpgrade.gameObject.SetActive(false);
+        }
+        else
+        {
+            btUpgrade.onClick.RemoveAllListeners();
+            btUpgrade.onClick.AddListener(() => tower.Upgrade());
+        }
+        btSell.onClick.RemoveAllListeners();
         btSell.onClick.AddListener(() => tower.Sell());
     }
 }

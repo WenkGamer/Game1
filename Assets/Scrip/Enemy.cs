@@ -5,7 +5,7 @@ using System.Collections.Generic;
 public class Enemy : MonoBehaviour
 {
     public float speed = 2f;
-    public int healt = 3;
+    public float health = 3;
     public Transform pathParent;
 
     private Animator animator;
@@ -65,11 +65,11 @@ public class Enemy : MonoBehaviour
     }
 
 
-    public void TakeDamage(int damage)
+    public void TakeDamage(float damage)
     {
-        healt -= damage;
+        health -= damage;
 
-        if (healt <= 0)
+        if (health <= 0)
         {
             Die();
         }

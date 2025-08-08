@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: overworld_tileset_grass_49
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 1679681076, guid: 836de35c650a4ce4dabac67e58543e1e, type: 3}
+  m_Sprite: {fileID: -9089477272109653109, guid: 836de35c650a4ce4dabac67e58543e1e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
