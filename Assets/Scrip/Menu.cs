@@ -9,6 +9,7 @@ public class Menu : MonoBehaviour
     public Slider volumeSlider;
     public GameObject Slide;
     public GameObject MenuScreen;
+    private bool isSlideOpen = false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -29,17 +30,10 @@ public class Menu : MonoBehaviour
 
     public void Setting()
     {
-        /*bool isOpen = false;
-        isOpen = !isOpen;
-        if (isOpen)
-        {
-            Slide.SetActive(true);
-        }
-        else 
-        { 
-            Slide.SetActive(false); 
-        }*/
-        if (Slide.activeSelf)
+        isSlideOpen = !isSlideOpen;
+        Slide.SetActive(isSlideOpen);
+
+        if (isSlideOpen)
         {
             Slide.SetActive(false);
             Debug.Log("Lần 2: Tắt Slide");
@@ -65,7 +59,7 @@ public class Menu : MonoBehaviour
     #region Screen
     public void Screen1()
     {
-
+        SceneManager.LoadScene(1);
     }
     public void Screen2()
     {
