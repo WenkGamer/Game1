@@ -10,6 +10,7 @@ public class UpgradeTower : MonoBehaviour
     public GameObject[] towerLevels;
     [SerializeField] private int[] costUpgrade;
     [SerializeField] private int currentLevel = 0; 
+    public int CurrentLevel => currentLevel;
 
     public void Init(Transform canvas)
     {

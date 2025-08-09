@@ -16,7 +16,7 @@ public class Househealth : MonoBehaviour
     void Start()
     {
         currenHealth = maxHealth;
-        UpdateHealthBarUI();
+        //UpdateHealthBarUI();
 
         
     }
@@ -29,11 +29,11 @@ public class Househealth : MonoBehaviour
             currenHealth = 0;
         }
 
-        Debug.Log($"Ngoi nha da chiu {amount} sat thuong. Mau hien tai:{currenHealth} ")
+        Debug.Log($"Ngoi nha da chiu {amount} sat thuong. Mau hien tai:{currenHealth} ");
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        // Update is called once per frame
+        //void Update()
+        //{
+
     }
 }

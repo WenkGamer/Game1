@@ -13,7 +13,7 @@ public class UpgradeUI : MonoBehaviour
     {
         this.tower = tower;
 
-        if(tower.towerlvup == null)
+        if(tower.towerLevels.Length - 3 <= tower.CurrentLevel)
         {
             btUpgrade.gameObject.SetActive(false);
         }
