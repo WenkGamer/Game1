@@ -3,13 +3,11 @@ using UnityEngine.UI;
 
 public class Househealth : MonoBehaviour
 {
-    [Tooltip(" Thanh Slider Ui de hien thi mau")]
     public Slider healthBarSlider;
 
-    [Tooltip("Mau toi da cua ngoi nha")]
     public float maxHealth = 100f;
 
-    [Tooltip("keo bang GameOverPanel vao day.")]
+
     public GameObject gameOverPanel;
 
     // Máu hiện tại, sễ được thiết lập khi batws đầu game
@@ -63,10 +61,9 @@ public class Househealth : MonoBehaviour
     {
         Debug.Log("ngoi nha da bi pha huy");
         Time.timeScale = 0;
-        GameObject gameOverPanel = GameObject.Find("GameOverPanel");
         if (gameOverPanel != null)
         {
-            gameOverPanel.SetActive(false);
+            gameOverPanel.SetActive(true);
         }
     }
 }
