@@ -6,6 +6,7 @@ public class GunController : MonoBehaviour
     public Transform firePoint;           // Vị trí bắn
     public float fireRate = 1f;           // Số lần bắn mỗi giây
     public float fireRange = 5f;          // Tầm bắn
+    public float damage = 3f;
 
     private float fireCooldown = 0f;
     private Transform target;
@@ -50,6 +51,7 @@ public class GunController : MonoBehaviour
         if (bulletScript != null)
         {
             bulletScript.SetTarget(target);
+            bulletScript.SetDamage(damage);
         }
     }
 }

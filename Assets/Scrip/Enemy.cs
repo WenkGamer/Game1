@@ -4,8 +4,11 @@ using System.Collections.Generic;
 
 public class Enemy : MonoBehaviour
 {
+    [Tooltip("Luong sat thuong cua quai gay ra khi va cham.")]
+    public float dameAmount = 20f;
+
     public float speed = 2f;
-    public int healt = 3;
+    public float health = 3;
     public Transform pathParent;
 
     private Animator animator;
@@ -20,7 +23,7 @@ public class Enemy : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
-        rb = GetComponent<Rigidbody2D>();
+       rb = GetComponent<Rigidbody2D>();
         
         foreach(Transform point in pathParent)
         {
@@ -65,11 +68,11 @@ public class Enemy : MonoBehaviour
     }
 
 
-    public void TakeDamage(int damage)
+    public void TakeDamage(float damage)
     {
-        healt -= damage;
+        health -= damage;
 
-        if (healt <= 0)
+        if (health <= 0)
         {
             Die();
         }
@@ -82,5 +85,20 @@ public class Enemy : MonoBehaviour
             Instantiate(goldPrefab, transform.position, Quaternion.identity);
         }
         Destroy(gameObject);
+    }
+
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("House")) { 
+        Househealth houseHeath =other.GetComponent<Househealth>();
+        if (houseHeath != null) 
+        {
+            houseHeath.TeakDamage1(dameAmount);
+            Destroy(gameObject);    
+        }
+    }
+    
+        
     }
 }

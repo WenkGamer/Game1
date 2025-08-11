@@ -7,10 +7,22 @@ public class UpgradeUI : MonoBehaviour
     public Button btSell;
     private UpgradeTower tower;
 
-     public void Setup(UpgradeTower tower)
+    [SerializeField] private int upgradecost;
+
+    public void Setup(UpgradeTower tower)
     {
         this.tower = tower;
-        btUpgrade.onClick.AddListener(() => tower.Upgrade());
+
+        if(tower.towerLevels.Length - 3 <= tower.CurrentLevel)
+        {
+            btUpgrade.gameObject.SetActive(false);
+        }
+        else
+        {
+            btUpgrade.onClick.RemoveAllListeners();
+            btUpgrade.onClick.AddListener(() => tower.Upgrade(upgradecost));
+        }
+        btSell.onClick.RemoveAllListeners();
         btSell.onClick.AddListener(() => tower.Sell());
     }
 }

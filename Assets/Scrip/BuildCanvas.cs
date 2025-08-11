@@ -12,18 +12,20 @@ public class BuildCanvas : MonoBehaviour
     public Button bttower1;
     public Button bttower2;
 
-    public void Setup(BuildTower spotBuild)
+    public void Setup(BuildTower spotBuild, int costtw1, int costtw2)
     {
         spot = spotBuild;
 
-        bttower1.onClick.AddListener(() => Build(towerPrefab1));
-        bttower2.onClick.AddListener(() => Build(towerPrefab2));
+        bttower1.onClick.AddListener(() => Build(towerPrefab1, costtw1));
+        bttower2.onClick.AddListener(() => Build(towerPrefab2, costtw2));
     }
 
-    private void Build(GameObject towerPrefab)
+    private void Build(GameObject towerPrefab, int cost)
     {
-        spot.BuildTowercl(towerPrefab);
-        Destroy(gameObject);
+        if (GameManager.instance.SpendGold(cost))
+        {
+            spot.BuildTowercl(towerPrefab);
+            Destroy(gameObject);
+        }
     }
-
 }
