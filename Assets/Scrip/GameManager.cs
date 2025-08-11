@@ -5,6 +5,7 @@ public class GameManager : MonoBehaviour
 {
 
     public static GameManager instance;
+    
 
     public TextMeshProUGUI goldText;
     private int currentGold;
@@ -49,4 +50,6 @@ public class GameManager : MonoBehaviour
         }
         return false;
     }
+
+
 }

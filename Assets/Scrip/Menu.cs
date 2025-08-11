@@ -82,4 +82,16 @@ public class Menu : MonoBehaviour
         MenuScreen.SetActive(false);
     }
     #endregion
+
+    public void Restart()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        Time.timeScale = 1;
+    }
+
+    public void BackMenu()
+    {
+        SceneManager.LoadScene(0);
+        Time.timeScale = 1;
+    }
 }

@@ -62,11 +62,9 @@ public class Househealth : MonoBehaviour
     private void Die()
     {
         Debug.Log("ngoi nha da bi pha huy");
+
         Time.timeScale = 0;
-        GameObject gameOverPanel = GameObject.Find("GameOverPanel");
-        if (gameOverPanel != null)
-        {
-            gameOverPanel.SetActive(false);
-        }
+        gameOverPanel.SetActive(true);
+       
     }
 }

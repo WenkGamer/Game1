@@ -6,6 +6,7 @@ public class Spawner : MonoBehaviour
     public GameObject enemyPrefab;
     public Transform path1;
     public Transform path2;
+    public GameObject WinGame;
 
     public int waveCount = 0;
     public int soloPathWaves = 3;
@@ -32,15 +33,19 @@ public class Spawner : MonoBehaviour
             }
             yield return new WaitForSeconds(timebtWaves);
         }
+
+        
     }
 
-    int DemEnemy(int wave)
+     int DemEnemy(int wave)
     {
         if (wave == 1) return 5;
         if (wave == 2) return 7;
         if (wave == 3) return 10;
         if (wave > 3 && wave < 10) return 15;
         return 19;
+        
+
     }
 
     public void SpawnEnemy()
@@ -57,8 +62,13 @@ public class Spawner : MonoBehaviour
             enemy.pathParent = Random.value < 0.5f ? path1 : path2;
         }
     }
-    public void NextWave()
+
+    public void GameWin()
     {
-        waveCount++;
+        if(waveCount == 11)
+        {
+            WinGame.SetActive(true);
+            Time.timeScale = 0;
+        }
     }
 }
