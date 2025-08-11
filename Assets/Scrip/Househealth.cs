@@ -9,6 +9,9 @@ public class Househealth : MonoBehaviour
     [Tooltip("Mau toi da cua ngoi nha")]
     public float maxHealth = 100f;
 
+    [Tooltip("keo bang GameOverPanel vao day.")]
+    public GameObject gameOverPanel;
+
     // Máu hiện tại, sễ được thiết lập khi batws đầu game
     private float currenHealth;
 
@@ -16,11 +19,15 @@ public class Househealth : MonoBehaviour
     void Start()
     {
         currenHealth = maxHealth;
-        //UpdateHealthBarUI();
+        UpdateHealthBarUI();
 
+        if (gameOverPanel != null)
+        {
+            gameOverPanel.SetActive(false);
+        }
         
     }
-    public void TeakDamage(float amount)
+    public void TeakDamage1(float amount)
     {
         currenHealth -= amount;
         // đảm bảo máu thấp hơn 0\
@@ -31,9 +38,35 @@ public class Househealth : MonoBehaviour
 
         Debug.Log($"Ngoi nha da chiu {amount} sat thuong. Mau hien tai:{currenHealth} ");
 
-        // Update is called once per frame
-        //void Update()
-        //{
+        UpdateHealthBarUI();
+        if (currenHealth <= 0)
+        {
+            Die();
+        }
+        
 
+    
+
+    }
+    private void UpdateHealthBarUI()
+    {
+        if (currenHealth <= 0)
+        {
+            healthBarSlider.value = 0f;
+        }
+        else
+        {
+            healthBarSlider.value = currenHealth / maxHealth;
+        }
+    }
+    private void Die()
+    {
+        Debug.Log("ngoi nha da bi pha huy");
+        Time.timeScale = 0;
+        GameObject gameOverPanel = GameObject.Find("GameOverPanel");
+        if (gameOverPanel != null)
+        {
+            gameOverPanel.SetActive(false);
+        }
     }
 }
