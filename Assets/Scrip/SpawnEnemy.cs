@@ -57,8 +57,4 @@ public class Spawner : MonoBehaviour
             enemy.pathParent = Random.value < 0.5f ? path1 : path2;
         }
     }
-    public void NextWave()
-    {
-        waveCount++;
-    }
 }
