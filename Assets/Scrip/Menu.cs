@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using UnityEditor.Rendering;
+using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -92,6 +93,11 @@ public class Menu : MonoBehaviour
     public void BackMenu()
     {
         SceneManager.LoadScene(0);
+        Time.timeScale = 1;
+    }
+    public void NextLevel()
+    {
+        SceneManager.LoadScene(1);
         Time.timeScale = 1;
     }
 }

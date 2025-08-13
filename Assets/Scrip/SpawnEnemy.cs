@@ -17,8 +17,12 @@ public class Spawner : MonoBehaviour
     private void Start()
     {
         StartCoroutine(SpawnWaves());
+       
     }
-
+    private void Update()
+    {
+        GameWin();
+    }
     IEnumerator SpawnWaves()
     {
         while (true)
