@@ -97,7 +97,7 @@ public class Menu : MonoBehaviour
     }
     public void NextLevel()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(2);
         Time.timeScale = 1;
     }
 }
