@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cb6c92e9e9d24c4985fea9a42b99246, type: 3}
+  m_Name: Tower1Data
+  m_EditorClassIdentifier: 
+  levels:
+  - towerPrefabs: {fileID: 7370796754806686111, guid: f84b61b60d677ef4aa6d77727fee2605, type: 3}
+    cost: 100
+  - towerPrefabs: {fileID: 7973375859313993328, guid: 237aee19eae7380479886605678b5437, type: 3}
+    cost: 175
+  - towerPrefabs: {fileID: 3326474965190025769, guid: c0aca2cd11a757745b4bf1d70c75002d, type: 3}
+    cost: 300

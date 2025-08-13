@@ -11,6 +11,17 @@ public class GunController : MonoBehaviour
     private float fireCooldown = 0f;
     private Transform target;
 
+    public TowerData towerData;
+    public int currentLevel = 0;
+    public int totalSpend = 0;
+
+    public void Init(TowerData data, int startLevel)
+    {
+        towerData = data;
+        currentLevel = startLevel;
+        totalSpend = data.levels[startLevel].Cost;
+    }
+
     void Update()
     {
         fireCooldown -= Time.deltaTime;

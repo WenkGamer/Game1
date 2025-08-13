@@ -1,30 +1,36 @@
 using System;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class BuildCanvas : MonoBehaviour
 {
     private BuildTower spot;
 
-    public GameObject towerPrefab1;
-    public GameObject towerPrefab2;
+    public TowerData towerPrefab1;
+    public TowerData towerPrefab2;
 
     public Button bttower1;
     public Button bttower2;
 
-    public void Setup(BuildTower spotBuild, int costtw1, int costtw2)
+    public void Setup(BuildTower spotBuild, TowerData t1, TowerData t2)
     {
         spot = spotBuild;
+        towerPrefab1 = t1;
+        towerPrefab2 = t2;
 
-        bttower1.onClick.AddListener(() => Build(towerPrefab1, costtw1));
-        bttower2.onClick.AddListener(() => Build(towerPrefab2, costtw2));
+        bttower1.GetComponentInChildren<TextMeshProUGUI>().text = $"Archer({t1.levels[0].Cost}G)";
+        bttower2.GetComponentInChildren<TextMeshProUGUI>().text = $"Bomb({t2.levels[0].Cost}G)";
+
+        bttower1.onClick.AddListener(() => Build(t1));
+        bttower2.onClick.AddListener(() => Build(t2));
     }
 
-    private void Build(GameObject towerPrefab, int cost)
+    private void Build(TowerData towerData)
     {
-        if (GameManager.instance.SpendGold(cost))
+        if (GameManager.instance.SpendGold(towerData.levels[0].Cost))
         {
-            spot.BuildTowercl(towerPrefab);
+            spot.BuildTowercl(towerData);
             Destroy(gameObject);
         }
     }
