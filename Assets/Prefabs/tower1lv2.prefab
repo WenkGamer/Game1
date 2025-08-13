@@ -148,5 +148,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   upgradeUI: {fileID: 1940672633831394772, guid: 4f5f9b79925be9247adafdab3fbf2228, type: 3}
-  towerlvup: {fileID: 3326474965190025769, guid: c0aca2cd11a757745b4bf1d70c75002d, type: 3}
   basesell: {fileID: 5864163194221635972, guid: bb0b1955d6a3ed84ca843e49571aab55, type: 3}
+  towerData: {fileID: 11400000, guid: dc1cc046f85f34c498f4ff396da42cee, type: 2}
+  currentLevel: 0

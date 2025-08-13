@@ -103,6 +103,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawn: {fileID: 0}
   towerSelectionUI: {fileID: 9067161764212205223, guid: 833ab5ed55c4d664589478cd1723b778, type: 3}
+  tower1Data: {fileID: 11400000, guid: dc1cc046f85f34c498f4ff396da42cee, type: 2}
+  tower2Data: {fileID: 11400000, guid: 5dc892c4a683cba4dbd96bb8b61f4f24, type: 2}
 --- !u!58 &3995103814077432710
 CircleCollider2D:
   m_ObjectHideFlags: 0

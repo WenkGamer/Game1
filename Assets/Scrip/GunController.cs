@@ -19,7 +19,7 @@ public class GunController : MonoBehaviour
     {
         towerData = data;
         currentLevel = startLevel;
-        totalSpend = data.levels[startLevel].cost;
+        totalSpend = data.levels[startLevel].Cost;
     }
 
     void Update()
