@@ -1,0 +1,32 @@
+{
+  "project_info": {
+    "project_number": "304296085540",
+    "firebase_url": "https://game1towerdefense-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "game1towerdefense",
+    "storage_bucket": "game1towerdefense.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:304296085540:ios:490e400d9ebd36088ef0b1",
+        "android_client_info": {
+          "package_name": "com.tranmanh.game2d"
+        }
+      },
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHq0HrbxpYi7Ciu2ZwvPaRi1vFVfhAENc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 0
+        },
+        "appinvite_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
