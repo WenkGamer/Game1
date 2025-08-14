@@ -20,10 +20,12 @@ public class Enemy : MonoBehaviour
     public int goldValue = 10;
     public GameObject goldPrefab;
 
+    [HideInInspector] public Spawner spawner;
+
     void Start()
     {
         animator = GetComponent<Animator>();
-       rb = GetComponent<Rigidbody2D>();
+        rb = GetComponent<Rigidbody2D>();
         
         foreach(Transform point in pathParent)
         {
@@ -80,6 +82,7 @@ public class Enemy : MonoBehaviour
 
     public void Die()
     {
+        spawner.enemyAlive--;
         if (goldPrefab != null)
         {
             Instantiate(goldPrefab, transform.position, Quaternion.identity);
