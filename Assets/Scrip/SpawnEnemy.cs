@@ -13,11 +13,13 @@ public class Spawner : MonoBehaviour
 
     public float timebtEnemies = 1f;
     public float timebtWaves = 5f;
+    [HideInInspector] public int enemyAlive = 0;
+    private bool allWaveDone = false;
 
     private void Start()
     {
+        enemyAlive = 0;
         StartCoroutine(SpawnWaves());
-       
     }
     private void Update()
     {
@@ -25,7 +27,7 @@ public class Spawner : MonoBehaviour
     }
     IEnumerator SpawnWaves()
     {
-        while (true)
+        while (waveCount < 10)
         {
             waveCount++;
             int enemyCount = DemEnemy(waveCount);
@@ -38,7 +40,7 @@ public class Spawner : MonoBehaviour
             yield return new WaitForSeconds(timebtWaves);
         }
 
-        
+        allWaveDone = true;
     }
 
      int DemEnemy(int wave)
@@ -56,7 +58,8 @@ public class Spawner : MonoBehaviour
     {
         GameObject enemyObj = Instantiate(enemyPrefab, transform.position, Quaternion.identity);
         Enemy enemy = enemyObj.GetComponent<Enemy>();
-
+        enemyAlive++;
+        enemy.spawner = this;
         if(waveCount < soloPathWaves)
         {
             enemy.pathParent = path1;
@@ -69,7 +72,7 @@ public class Spawner : MonoBehaviour
 
     public void GameWin()
     {
-        if(waveCount == 11)
+        if(allWaveDone && enemyAlive == 0)
         {
             WinGame.SetActive(true);
             Time.timeScale = 0;
