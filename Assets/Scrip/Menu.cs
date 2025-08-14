@@ -1,4 +1,4 @@
-﻿using UnityEditor.Rendering;
+﻿
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
@@ -99,5 +99,21 @@ public class Menu : MonoBehaviour
     {
         SceneManager.LoadScene(2);
         Time.timeScale = 1;
+    }
+    public void PauseGame()
+    {
+        isSlideOpen = !isSlideOpen;
+        Slide.SetActive(isSlideOpen);
+        if (isSlideOpen)
+        {
+            Debug.Log("Pause Game");
+            //Time.timeScale = 0;
+        }
+        else
+        {
+            Debug.Log("Start Game");
+            //Time.timeScale = 1;
+        }
+        
     }
 }
