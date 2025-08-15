@@ -7,7 +7,7 @@ AnimationClip:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: weapon_sword_up
-  serializedVersion: 6
+  serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
   m_UseHighQualityCurve: 1
@@ -17,63 +17,15 @@ AnimationClip:
   m_PositionCurves: []
   m_ScaleCurves: []
   m_FloatCurves: []
-  m_PPtrCurves:
-  - curve:
-    - time: 0
-      value: {fileID: 21300000, guid: e6fe5b1f3cf54218a50964a55428e1a8, type: 3}
-    - time: 0.083333336
-      value: {fileID: 21300000, guid: 8ee2465f81524332b693af6d6e55cb8c, type: 3}
-    - time: 0.16666667
-      value: {fileID: 21300000, guid: e155eeff42364d91adbdd332b7c5d7eb, type: 3}
-    - time: 0.25
-      value: {fileID: 21300000, guid: 749b3f85c64e456abbc20a6187a24c23, type: 3}
-    - time: 0.33333334
-      value: {fileID: 21300000, guid: 3331df4ae7104276ac575bfe355bcc7c, type: 3}
-    - time: 0.41666666
-      value: {fileID: 21300000, guid: b7565afd3f0a4672bed2df0ae298381a, type: 3}
-    - time: 0.5
-      value: {fileID: 21300000, guid: 52a7cc630d454c258596783b76f55c6c, type: 3}
-    - time: 0.5833333
-      value: {fileID: 21300000, guid: 2ea3ee0d167f4146bd92e1c76f15f9a6, type: 3}
-    - time: 0.6666667
-      value: {fileID: 21300000, guid: 746222390e774eb9b5a1d7f0850afcfd, type: 3}
-    - time: 0.75
-      value: {fileID: 21300000, guid: 21e0acb5138f466eb9ebda0b6aefa570, type: 3}
-    - time: 0.8333333
-      value: {fileID: 21300000, guid: 3afd103b958343e6982968c79418c7ce, type: 3}
-    - time: 0.9166667
-      value: {fileID: 21300000, guid: f33ca5a2477c4db6aa54480a85d199ab, type: 3}
-    attribute: m_Sprite
-    path: 
-    classID: 212
-    script: {fileID: 0}
+  m_PPtrCurves: []
   m_SampleRate: 12
   m_WrapMode: 0
   m_Bounds:
     m_Center: {x: 0, y: 0, z: 0}
     m_Extent: {x: 0, y: 0, z: 0}
   m_ClipBindingConstant:
-    genericBindings:
-    - serializedVersion: 2
-      path: 0
-      attribute: 0
-      script: {fileID: 0}
-      typeID: 212
-      customType: 23
-      isPPtrCurve: 1
-    pptrCurveMapping:
-    - {fileID: 21300000, guid: e6fe5b1f3cf54218a50964a55428e1a8, type: 3}
-    - {fileID: 21300000, guid: 8ee2465f81524332b693af6d6e55cb8c, type: 3}
-    - {fileID: 21300000, guid: e155eeff42364d91adbdd332b7c5d7eb, type: 3}
-    - {fileID: 21300000, guid: 749b3f85c64e456abbc20a6187a24c23, type: 3}
-    - {fileID: 21300000, guid: 3331df4ae7104276ac575bfe355bcc7c, type: 3}
-    - {fileID: 21300000, guid: b7565afd3f0a4672bed2df0ae298381a, type: 3}
-    - {fileID: 21300000, guid: 52a7cc630d454c258596783b76f55c6c, type: 3}
-    - {fileID: 21300000, guid: 2ea3ee0d167f4146bd92e1c76f15f9a6, type: 3}
-    - {fileID: 21300000, guid: 746222390e774eb9b5a1d7f0850afcfd, type: 3}
-    - {fileID: 21300000, guid: 21e0acb5138f466eb9ebda0b6aefa570, type: 3}
-    - {fileID: 21300000, guid: 3afd103b958343e6982968c79418c7ce, type: 3}
-    - {fileID: 21300000, guid: f33ca5a2477c4db6aa54480a85d199ab, type: 3}
+    genericBindings: []
+    pptrCurveMapping: []
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}

@@ -7,7 +7,7 @@ AnimationClip:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: weapon_sword_up
-  serializedVersion: 6
+  serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
   m_UseHighQualityCurve: 1
@@ -18,7 +18,8 @@ AnimationClip:
   m_ScaleCurves: []
   m_FloatCurves: []
   m_PPtrCurves:
-  - curve:
+  - serializedVersion: 2
+    curve:
     - time: 0
       value: {fileID: 21300000, guid: c58b7ddc13514554b2aae084c89069e6, type: 3}
     - time: 0.083333336
@@ -43,10 +44,13 @@ AnimationClip:
       value: {fileID: 21300000, guid: 1cf99b1385e44cc2a5b9d4b6e3fe03c5, type: 3}
     - time: 0.9166667
       value: {fileID: 21300000, guid: 1aaeadc520d148b3b4db42ad0d95cc24, type: 3}
+    - time: 1.0833334
+      value: {fileID: 21300000, guid: 0abbd19092744f188085911c65a38059, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
     script: {fileID: 0}
+    flags: 2
   m_SampleRate: 12
   m_WrapMode: 0
   m_Bounds:
@@ -61,6 +65,8 @@ AnimationClip:
       typeID: 212
       customType: 23
       isPPtrCurve: 1
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     pptrCurveMapping:
     - {fileID: 21300000, guid: c58b7ddc13514554b2aae084c89069e6, type: 3}
     - {fileID: 21300000, guid: c20b5dab3a8d468cae2f409def322c0e, type: 3}
@@ -74,12 +80,13 @@ AnimationClip:
     - {fileID: 21300000, guid: 2551937e09014554a3bb3eb8e8ea9b2c, type: 3}
     - {fileID: 21300000, guid: 1cf99b1385e44cc2a5b9d4b6e3fe03c5, type: 3}
     - {fileID: 21300000, guid: 1aaeadc520d148b3b4db42ad0d95cc24, type: 3}
+    - {fileID: 21300000, guid: 0abbd19092744f188085911c65a38059, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 1
+    m_StopTime: 1.1666667
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
