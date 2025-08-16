@@ -12,8 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 675598e8ec0dae5489458f18ebbfed10, type: 3}
   m_Name: EnemyData
   m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 0}
-  health: 10
-  speed: 2
-  damage: 10
-  goldDrop: 10
+  enemies:
+  - enemyPrefab: {fileID: 5642613619382277700, guid: 6bc66ce43fad05a42895a2edce281e45, type: 3}
+    health: 10
+    speed: 2
+    damage: 10
+    goldDrop: 10
+  - enemyPrefab: {fileID: 2927668977855454308, guid: cd5f08961eb2d8d4eb0710fa7fb018f0, type: 3}
+    health: 20
+    speed: 2.5
+    damage: 20
+    goldDrop: 20
+  - enemyPrefab: {fileID: 4511869586710186895, guid: 98ad66e4ea24f9d45a21645ed523fce1, type: 3}
+    health: 200
+    speed: 2.5
+    damage: 100
+    goldDrop: 0
