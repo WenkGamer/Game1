@@ -4,35 +4,46 @@ using System.Collections.Generic;
 
 public class Enemy : MonoBehaviour
 {
-    [Tooltip("Luong sat thuong cua quai gay ra khi va cham.")]
-    public float dameAmount = 20f;
+    private EnemyStats stats;
 
-    public float speed = 2f;
-    public float health = 3;
+    private float health;
+    private float dameAmount;
+    private float speed;
+    private int goldValue;
+    public GameObject goldPrefab;
+
     public Transform pathParent;
+    private List<Transform> waypoints = new List<Transform>();
+    private int currentIndex = 0;
 
     private Animator animator;
     private Rigidbody2D rb;
     private Vector2 direction;
-    private List<Transform> waypoints = new List<Transform>();
-    private int currentIndex = 0;
-
-    public int goldValue = 10;
-    public GameObject goldPrefab;
 
     [HideInInspector] public Spawner spawner;
+
+    public void Init(EnemyStats enemyStats)
+    {
+        this.stats = enemyStats;
+
+        health = stats.Health;
+        dameAmount = stats.Damage;
+        speed = stats.Speed;
+        goldValue = stats.GoldDrop;
+
+        waypoints.Clear();
+        foreach(Transform points in pathParent)
+        {
+            waypoints.Add(points);
+        }
+        if(waypoints.Count > 0)
+            transform.position = waypoints[0].position;
+    }
 
     void Start()
     {
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
-        
-        foreach(Transform point in pathParent)
-        {
-            waypoints.Add(point);
-        }
-        if(waypoints.Count > 0)
-            transform.position = waypoints[0].position;
     }
 
     void Update()
@@ -51,10 +62,7 @@ public class Enemy : MonoBehaviour
         }
         if (currentIndex >= waypoints.Count)
         {
-            
-            // Enemy đã đến waypoint cuối
             Destroy(gameObject);
-            
         }
 
         

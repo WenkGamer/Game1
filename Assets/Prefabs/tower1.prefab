@@ -106,7 +106,10 @@ MonoBehaviour:
   firePoint: {fileID: 5387728430563065017}
   fireRate: 1
   fireRange: 5
-  damage: 1
+  damage: 4
+  towerData: {fileID: 11400000, guid: dc1cc046f85f34c498f4ff396da42cee, type: 2}
+  currentLevel: 0
+  totalSpend: 0
 --- !u!114 &4912314117023351632
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -121,8 +124,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   upgradeUI: {fileID: 1940672633831394772, guid: 4f5f9b79925be9247adafdab3fbf2228, type: 3}
   basesell: {fileID: 5864163194221635972, guid: bb0b1955d6a3ed84ca843e49571aab55, type: 3}
-  towerLevels: []
-  costUpgrade: 
+  towerData: {fileID: 11400000, guid: dc1cc046f85f34c498f4ff396da42cee, type: 2}
   currentLevel: 0
 --- !u!61 &2944538668041067192
 BoxCollider2D:

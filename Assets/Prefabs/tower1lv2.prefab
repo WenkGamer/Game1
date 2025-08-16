@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4084079647175727055}
   - component: {fileID: 3952287079567974186}
   - component: {fileID: 5263893877424781071}
+  - component: {fileID: -6476959288685658152}
   m_Layer: 0
   m_Name: tower1lv2
   m_TagString: Untagged
@@ -151,3 +152,23 @@ MonoBehaviour:
   basesell: {fileID: 5864163194221635972, guid: bb0b1955d6a3ed84ca843e49571aab55, type: 3}
   towerData: {fileID: 11400000, guid: dc1cc046f85f34c498f4ff396da42cee, type: 2}
   currentLevel: 0
+--- !u!114 &-6476959288685658152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7973375859313993328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a1bf7d53d878ec448e2ece27e8aec66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 6178821088404292581, guid: 5363be5f357566d469af85035084babd, type: 3}
+  firePoint: {fileID: 3830059838506014166}
+  fireRate: 2
+  fireRange: 5
+  damage: 4
+  towerData: {fileID: 11400000, guid: dc1cc046f85f34c498f4ff396da42cee, type: 2}
+  currentLevel: 0
+  totalSpend: 0
