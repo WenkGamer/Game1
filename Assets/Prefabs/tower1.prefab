@@ -104,9 +104,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 6178821088404292581, guid: 5363be5f357566d469af85035084babd, type: 3}
   firePoint: {fileID: 5387728430563065017}
-  fireRate: 1
+  fireRate: 1.5
   fireRange: 5
-  damage: 4
+  damage: 5
   towerData: {fileID: 11400000, guid: dc1cc046f85f34c498f4ff396da42cee, type: 2}
   currentLevel: 0
   totalSpend: 0

@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 2253228691907431423}
   m_Layer: 0
   m_Name: knight
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -200,4 +200,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   goldPrefab: {fileID: 2033722365059340368, guid: a221980d38eab1a41a3808bfbcdb43ff, type: 3}
   pathParent: {fileID: 0}
+  useX: 1
+  useY: 0
   spawner: {fileID: 0}

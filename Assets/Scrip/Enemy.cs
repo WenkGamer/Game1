@@ -19,6 +19,8 @@ public class Enemy : MonoBehaviour
     private Animator animator;
     private Rigidbody2D rb;
     private Vector2 direction;
+    public bool useX = true;
+    public bool useY = true;
 
     [HideInInspector] public Spawner spawner;
 
@@ -72,8 +74,10 @@ public class Enemy : MonoBehaviour
     {
         if(animator != null)
         {
-        animator.SetFloat("X", direction.x);
-        animator.SetFloat("Y", direction.y);
+            if(useX)
+                animator.SetFloat("X", direction.x);
+            if (useY)
+                animator.SetFloat("Y", direction.y);
         }
     }
 

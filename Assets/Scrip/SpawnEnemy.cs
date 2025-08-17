@@ -69,7 +69,7 @@ public class Spawner : MonoBehaviour
             stats = enemyDatas[0].enemies[2];
         }
 
-        Transform path = paths[Random.Range(0, paths.Length - 1)];
+        Transform path = paths[Random.Range(0, paths.Length)];
 
         GameObject enemyObj = Instantiate(stats.EnemyPrefab, transform.position, Quaternion.identity);
         Enemy enemy = enemyObj.GetComponent<Enemy>();
