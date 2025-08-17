@@ -14,7 +14,7 @@ public class Menu : MonoBehaviour
     public Button pauseButton;       // nút pause
     public Sprite pauseSprite;       // sprite khi đang chơi (hiện nút Pause)
     public Sprite playSprite;        // sprite khi đang pause (hiện nút Play)
-
+    public GameObject Music;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -120,6 +120,7 @@ public class Menu : MonoBehaviour
         Slide.SetActive(true);
         Time.timeScale = 0;
         isSlideOpen = true;
+        Music.SetActive(false);
 
         // đổi sprite nút sang Play
         pauseButton.image.sprite = playSprite;
@@ -130,6 +131,7 @@ public class Menu : MonoBehaviour
         Slide.SetActive(false);
         Time.timeScale = 1;
         isSlideOpen = false;
+        Music.SetActive(true);
 
         // đổi sprite nút sang Pause
         pauseButton.image.sprite = pauseSprite;
