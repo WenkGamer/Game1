@@ -167,7 +167,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 910698953808645410, guid: 4885d6a9ad2a0f44aa0afd036275c806, type: 3}
   firePoint: {fileID: 1378735886248864261}
   fireRate: 3
-  fireRange: 5
+  fireRange: 6
   damage: 15
   towerData: {fileID: 11400000, guid: 5dc892c4a683cba4dbd96bb8b61f4f24, type: 2}
   currentLevel: 0

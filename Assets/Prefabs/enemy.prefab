@@ -139,7 +139,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &8343047347083977400
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -198,10 +198,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d893914324168df408ae2f594b3554ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dameAmount: 10
-  speed: 1.5
-  health: 2
-  pathParent: {fileID: 0}
-  goldValue: 10
   goldPrefab: {fileID: 2033722365059340368, guid: a221980d38eab1a41a3808bfbcdb43ff, type: 3}
+  pathParent: {fileID: 0}
+  useX: 1
+  useY: 1
   spawner: {fileID: 0}

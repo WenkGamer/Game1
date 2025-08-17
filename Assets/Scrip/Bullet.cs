@@ -2,7 +2,7 @@
 
 public class Bullet : MonoBehaviour
 {
-    public float speed = 10f;
+    public float speed = 30f;
     private Transform target;
     private Rigidbody2D rb;
     private float dameBullet;
@@ -29,18 +29,17 @@ public class Bullet : MonoBehaviour
             return;
         }
 
-        Vector2 direction = (target.position - transform.position).normalized;
-        transform.Translate(direction * speed * Time.deltaTime);
+        Vector2 direction = ((Vector2)target.position - rb.position).normalized;
+        rb.MovePosition(rb.position + direction * speed * Time.deltaTime);
+    }
 
-        if (Vector2.Distance(transform.position, target.position) < 0.2f)
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        Enemy enemy = collision.gameObject.GetComponent<Enemy>();
+        if (enemy != null)
         {
-            Enemy enemy = target.GetComponent<Enemy>();
-            if (enemy != null)
-            {
-                enemy.TakeDamage(dameBullet);
-            }
-
-            Destroy(gameObject); // Xoá đạn
+            enemy.TakeDamage(dameBullet);
+            Destroy(gameObject);
         }
-    }  
+    }
 }
