@@ -106,7 +106,7 @@ public class Menu : MonoBehaviour
 
         if(currentIndex < totalScenes)
         {
-            SceneManager.LoadScene(currentIndex++);
+            SceneManager.LoadScene(currentIndex+1);
         }
         else
         {
