@@ -101,7 +101,18 @@ public class Menu : MonoBehaviour
     }
     public void NextLevel()
     {
-        SceneManager.LoadScene(2);
+        int currentIndex = SceneManager.GetActiveScene().buildIndex;
+        int totalScenes = SceneManager.sceneCountInBuildSettings;
+
+        if(currentIndex < totalScenes)
+        {
+            SceneManager.LoadScene(currentIndex++);
+        }
+        else
+        {
+            SceneManager.LoadScene("Menu");
+        }
+
         Time.timeScale = 1;
     }
     public void TogglePause()

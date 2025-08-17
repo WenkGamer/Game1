@@ -17,12 +17,12 @@ MonoBehaviour:
     health: 10
     speed: 2
     damage: 10
-    goldDrop: 10
+    goldDrop: 30
   - enemyPrefab: {fileID: 2927668977855454308, guid: cd5f08961eb2d8d4eb0710fa7fb018f0, type: 3}
     health: 20
     speed: 2.5
     damage: 20
-    goldDrop: 20
+    goldDrop: 70
   - enemyPrefab: {fileID: 4511869586710186895, guid: 98ad66e4ea24f9d45a21645ed523fce1, type: 3}
     health: 200
     speed: 2.5

@@ -95,9 +95,14 @@ public class Enemy : MonoBehaviour
     public void Die()
     {
         spawner.enemyAlive--;
-        if (goldPrefab != null)
+        if (goldPrefab != null && goldValue > 0)
         {
-            Instantiate(goldPrefab, transform.position, Quaternion.identity);
+            GameObject gold = Instantiate(goldPrefab, transform.position, Quaternion.identity);
+            GoldItems goldItems = gold.GetComponent<GoldItems>();
+            if(goldItems != null)
+            {
+                goldItems.SetGold(goldValue);
+            }
         }
         Destroy(gameObject);
     }
