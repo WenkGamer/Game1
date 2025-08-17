@@ -1830,17 +1830,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 110237102440698678}
     m_Modifications:
+    - target: {fileID: 292065572511006474, guid: f44339a628801bf48ba8c587d673d99c, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 292065572511006474, guid: f44339a628801bf48ba8c587d673d99c, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 6823797367008226197, guid: 823c4c7a25551a843848dc800e16afe5, type: 3}
     - target: {fileID: 1637496420081079942, guid: f44339a628801bf48ba8c587d673d99c, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1637496420081079942, guid: f44339a628801bf48ba8c587d673d99c, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1637496420081079942, guid: f44339a628801bf48ba8c587d673d99c, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1992466766323235424, guid: f44339a628801bf48ba8c587d673d99c, type: 3}
       propertyPath: m_Pivot.x
@@ -1972,7 +1980,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3516677928620009542, guid: f44339a628801bf48ba8c587d673d99c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: PauseGame
+      value: TogglePause
       objectReference: {fileID: 0}
     - target: {fileID: 3516677928620009542, guid: f44339a628801bf48ba8c587d673d99c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
@@ -1988,7 +1996,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4529567161981699709, guid: f44339a628801bf48ba8c587d673d99c, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4925064978761729732, guid: f44339a628801bf48ba8c587d673d99c, type: 3}
       propertyPath: m_Name
@@ -1996,11 +2004,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6978906128278699512, guid: f44339a628801bf48ba8c587d673d99c, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6978906128278699512, guid: f44339a628801bf48ba8c587d673d99c, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7597288364017299982, guid: f44339a628801bf48ba8c587d673d99c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -2098,7 +2106,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5269895436034153162, guid: 851ad6afb74ad864994d381c86d6ca37, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 201
+      value: 161
       objectReference: {fileID: 0}
     - target: {fileID: 5269895436034153162, guid: 851ad6afb74ad864994d381c86d6ca37, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

@@ -748,7 +748,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 443136266}
         m_TargetAssemblyTypeName: Menu, Assembly-CSharp
-        m_MethodName: Screen2
+        m_MethodName: Screen4
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -778,8 +778,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: -6188280680563675295, guid: af9ed3bdd9c5b104591d34ea82c90252, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1101,6 +1101,9 @@ MonoBehaviour:
   volumeSlider: {fileID: 1850278337}
   Slide: {fileID: 707593867}
   MenuScreen: {fileID: 782559863}
+  pauseButton: {fileID: 0}
+  pauseSprite: {fileID: 0}
+  playSprite: {fileID: 0}
 --- !u!114 &443136267
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1203,7 +1206,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 43, y: 50}
+  m_AnchoredPosition: {x: -249, y: 50}
   m_SizeDelta: {x: 120, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &711746638
@@ -1252,7 +1255,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 443136266}
         m_TargetAssemblyTypeName: Menu, Assembly-CSharp
-        m_MethodName: Screen4
+        m_MethodName: Screen1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1282,8 +1285,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: -1046444227985733684, guid: b7773d0189445c248b060d323898f854, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1629,7 +1632,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 443136266}
         m_TargetAssemblyTypeName: Menu, Assembly-CSharp
-        m_MethodName: Screen3
+        m_MethodName: Screen2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1659,8 +1662,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 3468244779728606172, guid: df6068c5b0f90c141a5db8bc590b4e9b, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1928,8 +1931,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: -5079673169257025244, guid: 0f49deb1ee0a9c84d98a292078cefae8, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -2592,7 +2595,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -248, y: 50}
+  m_AnchoredPosition: {x: 42.1, y: 50}
   m_SizeDelta: {x: 120, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1574947172
@@ -2641,7 +2644,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 443136266}
         m_TargetAssemblyTypeName: Menu, Assembly-CSharp
-        m_MethodName: Screen1
+        m_MethodName: Screen3
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

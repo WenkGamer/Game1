@@ -10,7 +10,11 @@ public class Menu : MonoBehaviour
     public Slider volumeSlider;
     public GameObject Slide;
     public GameObject MenuScreen;
-    private bool isSlideOpen = false;
+    private bool isSlideOpen;
+    public Button pauseButton;       // nút pause
+    public Sprite pauseSprite;       // sprite khi đang chơi (hiện nút Pause)
+    public Sprite playSprite;        // sprite khi đang pause (hiện nút Play)
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -37,12 +41,12 @@ public class Menu : MonoBehaviour
         if (isSlideOpen)
         {
             Slide.SetActive(false);
-            Debug.Log("Lần 2: Tắt Slide");
+            
         }
         else
         {
             Slide.SetActive(true);
-            Debug.Log("Lần 1: Mở Slide");
+           
         }
 
     }
@@ -64,19 +68,19 @@ public class Menu : MonoBehaviour
     }
     public void Screen2()
     {
-
+        SceneManager.LoadScene(2);
     }
     public void Screen3()
     {
-
+        SceneManager.LoadScene(3);
     }
     public void Screen4()
     {
-
+        SceneManager.LoadScene(4);
     }
     public void Screen5()
     {
-
+        SceneManager.LoadScene(5);
     }
     public void ExitMenuScreen()
     {
@@ -100,20 +104,34 @@ public class Menu : MonoBehaviour
         SceneManager.LoadScene(2);
         Time.timeScale = 1;
     }
-    public void PauseGame()
+    public void TogglePause()
     {
-        isSlideOpen = !isSlideOpen;
-        Slide.SetActive(isSlideOpen);
         if (isSlideOpen)
         {
-            Debug.Log("Pause Game");
-            //Time.timeScale = 0;
+            Resume();
         }
         else
         {
-            Debug.Log("Start Game");
-            //Time.timeScale = 1;
+            Pause();
         }
-        
+    }
+    public void Pause()
+    {
+        Slide.SetActive(true);
+        Time.timeScale = 0;
+        isSlideOpen = true;
+
+        // đổi sprite nút sang Play
+        pauseButton.image.sprite = playSprite;
+    }
+
+    public void Resume()
+    {
+        Slide.SetActive(false);
+        Time.timeScale = 1;
+        isSlideOpen = false;
+
+        // đổi sprite nút sang Pause
+        pauseButton.image.sprite = pauseSprite;
     }
 }
