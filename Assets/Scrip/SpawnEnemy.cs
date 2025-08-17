@@ -9,8 +9,8 @@ public class Spawner : MonoBehaviour
 
     [Header("Game settings")]
     public GameObject WinGame;
-    public int waveCount = 0;
-    public int maxWaves = 10;
+    public int waveCount = 10;
+    public int maxWaves = 3;
 
     public float timebtEnemies = 1f;
     public float timebtWaves = 5f;

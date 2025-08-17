@@ -168,7 +168,7 @@ MonoBehaviour:
   firePoint: {fileID: 5039894431577163274}
   fireRate: 3
   fireRange: 6
-  damage: 7
+  damage: 9
   towerData: {fileID: 11400000, guid: dc1cc046f85f34c498f4ff396da42cee, type: 2}
   currentLevel: 0
   totalSpend: 0
