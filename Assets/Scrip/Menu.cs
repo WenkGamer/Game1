@@ -136,4 +136,8 @@ public class Menu : MonoBehaviour
         // đổi sprite nút sang Pause
         pauseButton.image.sprite = pauseSprite;
     }
+    public void Exit()
+    {
+        Application.Quit();
+    }
 }
