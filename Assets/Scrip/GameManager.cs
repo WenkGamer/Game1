@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        currentGold = 100;
+        currentGold = 300;
         UpdateGoldUI();
     }
     void Awake()
