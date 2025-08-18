@@ -8336,18 +8336,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1246146351}
-    - target: {fileID: 668868492471340116, guid: 0cc14512bf9d2694891ce5ca964a7d42, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Restart
-      objectReference: {fileID: 0}
     - target: {fileID: 821324502099316019, guid: 0cc14512bf9d2694891ce5ca964a7d42, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1246146351}
-    - target: {fileID: 821324502099316019, guid: 0cc14512bf9d2694891ce5ca964a7d42, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ExitMenuScreen
-      objectReference: {fileID: 0}
     - target: {fileID: 956696978839488897, guid: 0cc14512bf9d2694891ce5ca964a7d42, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -8360,10 +8352,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1246146351}
-    - target: {fileID: 1941717953438378719, guid: 0cc14512bf9d2694891ce5ca964a7d42, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Restart
-      objectReference: {fileID: 0}
     - target: {fileID: 4591787020587760793, guid: 0cc14512bf9d2694891ce5ca964a7d42, type: 3}
       propertyPath: m_Name
       value: Canvas 1
@@ -8376,14 +8364,6 @@ PrefabInstance:
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1246146351}
-    - target: {fileID: 5085200747222323385, guid: 0cc14512bf9d2694891ce5ca964a7d42, type: 3}
-      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SetMusicVolume
-      objectReference: {fileID: 0}
-    - target: {fileID: 5085200747222323385, guid: 0cc14512bf9d2694891ce5ca964a7d42, type: 3}
-      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Menu, Assembly-CSharp
-      objectReference: {fileID: 0}
     - target: {fileID: 5136104140704198052, guid: 0cc14512bf9d2694891ce5ca964a7d42, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -8480,10 +8460,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1246146351}
-    - target: {fileID: 8780602915153545901, guid: 0cc14512bf9d2694891ce5ca964a7d42, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: NextLevel
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
