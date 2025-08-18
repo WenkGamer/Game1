@@ -95,6 +95,7 @@ public class Enemy : MonoBehaviour
     public void Die()
     {
         spawner.enemyAlive--;
+        Debug.Log(spawner.enemyAlive);
         if (goldPrefab != null && goldValue > 0)
         {
             GameObject gold = Instantiate(goldPrefab, transform.position, Quaternion.identity);
@@ -115,6 +116,7 @@ public class Enemy : MonoBehaviour
         if (houseHeath != null) 
         {
             houseHeath.TeakDamage1(dameAmount);
+            spawner.enemyAlive--;
             Destroy(gameObject);    
         }
     }
